@@ -1,0 +1,118 @@
+
+/* Importo da google il font che mi piace*/
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Playwrite IE", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+/* Per mantenere il footer "incollato" alla parte inferiore della pagina */
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Main */
+main {
+    flex: 1;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* FOOTER */
+footer {
+    background-color: #ffd5ee;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+/* Menù a scomparsa in alto a sinistra */
+.nav-container {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+/* Parametri del bottone del menù */
+.dropbtn {
+	font-family: "Playwrite IE", cursive;
+    background-color: #ffbae5;
+    color: white;
+    padding: 10px 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+/* Parametri del bottone del menù quando viene passato il mouse */
+.dropbtn:hover {
+    background-color: #ffa1db;
+}
+/* Parametri delle voci di menù nel menù a tendina */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 6px;
+}
+/* Parametri dei link nel menù a tendina */
+.dropdown-content a {
+    color:#ffbae5;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Parametri delle voci di menù nel menù a tendina quando viene passato il mouse */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block;
+}
+
+/* Stile per la sezione descrittiva delle pagine */
+.page-description {
+    text-align: center;
+    margin: 20px auto 40px auto;
+    max-width: 800px;
+}
+
+.page-description h2 {
+    font-size: 2rem;
+    color: #ff914d;
+    margin-bottom: 10px;
+}
+
+.page-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Immagini responsive */
+img {
+    max-width: 100%;   /* L'immagine non supera mai la larghezza del contenitore */
+    height: auto;      /* Mantiene le proporzioni originali */
+    display: block;    /* Evita piccoli spazi indesiderati sotto l'immagine */
+    margin: 10px 0;    /* Spazio verticale opzionale */
+}
