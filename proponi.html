@@ -1,0 +1,68 @@
+<!DOCTYPE html> <!-- Dichiara che il documento è in HTML5 -->
+<html lang="it"> <!-- Imposta la lingua della pagina in italiano -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proponi tu!</title>
+	<link rel="icon" type="image/x-icon" href="proponi.icoo">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-container">
+        <button class="dropbtn" onclick="toggleDropdown()">Menu ▾</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="salate.html">Ricette Salate</a>
+			<a href="dolci.html">Ricette Dolci</a>
+			<a href="proponi.html">Proponi tu!</a>
+        </div>
+	</div>
+
+<main> <!-- Contenuto principale della pagina -->
+
+    <section class="page-description">
+        <h2>Hai un'idea originale?</h2> <!-- Titolo della sezione -->
+        <p>Scrivici la tua ricetta e contribuisci al nostro ricettario!</p> <!-- Testo descrittivo -->
+    </section>
+
+    <!-- FORM che invia i dati a FormSubmit -->
+    <form action="https://formsubmit.co/ilariagori08@gmail.com" method="POST">
+
+        <!-- Dopo l'invio reindirizza alla pagina grazie.html -->
+        <input type="hidden" name="_next" value="grazie.html">
+
+        <!-- Campo email dell'utente -->
+        <label for="email">La tua email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Menu a scelta multipla -->
+        <label for="categoria">Categoria della ricetta:</label>
+        <select id="categoria" name="categoria" required>
+            <option value="">-- Seleziona --</option>
+            <option value="Salata">Ricetta Salata</option>
+            <option value="Dolce">Ricetta Dolce</option>
+        </select>
+
+        <!-- Campo ingredienti -->
+        <label for="ingredienti">Ingredienti:</label>
+        <textarea id="ingredienti" name="ingredienti" rows="5" required></textarea>
+
+        <!-- Campo procedimento -->
+        <label for="procedimento">Procedimento:</label>
+        <textarea id="procedimento" name="procedimento" rows="7" required></textarea>
+
+        <!-- Pulsante invio -->
+        <button type="submit">Invia</button>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>© 2026 Il Mio Ricettario</p> <!-- Footer -->
+</footer>
+        <script src="script.js"></script>
+</body>
+</html>
