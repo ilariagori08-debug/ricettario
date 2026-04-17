@@ -1,4 +1,3 @@
-
 /* Importo da google il font che mi piace*/
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+IE:wght@100..400&display=swap');
 
@@ -36,7 +35,7 @@ main {
 
 /* FOOTER */
 footer {
-    background-color: #ffd5ee;
+    background-color: #72BAA9;
     color: white;
     text-align: center;
     padding: 15px;
@@ -52,7 +51,7 @@ footer {
 /* Parametri del bottone del menù */
 .dropbtn {
 	font-family: "Playwrite IE", cursive;
-    background-color: #ffbae5;
+    background-color: #AE2448;
     color: white;
     padding: 10px 16px;
     font-size: 16px;
@@ -62,7 +61,7 @@ footer {
 }
 /* Parametri del bottone del menù quando viene passato il mouse */
 .dropbtn:hover {
-    background-color: #ffa1db;
+    background-color: #6E1A37;
 }
 /* Parametri delle voci di menù nel menù a tendina */
 .dropdown-content {
@@ -76,7 +75,7 @@ footer {
 }
 /* Parametri dei link nel menù a tendina */
 .dropdown-content a {
-    color:#ffbae5;
+    color:#AE2448;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -99,10 +98,14 @@ footer {
 
 .page-description h2 {
     font-size: 2rem;
-    color: #ff914d;
+    color: #AE2448;
     margin-bottom: 10px;
 }
-
+.page-description h4 {
+	 font-size: 1rem;
+    color: #6E1A37;
+    line-height: 1.6;}
+	
 .page-description p {
     font-size: 1rem;
     color: #555;
@@ -115,4 +118,142 @@ img {
     height: auto;      /* Mantiene le proporzioni originali */
     display: block;    /* Evita piccoli spazi indesiderati sotto l'immagine */
     margin: 10px 0;    /* Spazio verticale opzionale */
+}
+.video-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.video-section iframe {
+    max-width: 100%;
+    border-radius: 10px;
+
+}
+
+/* Paginazione multi-pagina */
+.page-buttons {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.page-buttons .page-btn {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 10px 16px;
+    background-color: #7FB77E;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+/* Pagina attiva (rimane scura) */
+.page-buttons .page-btn.active {
+    background-color: #2F6B3F; 
+    transform: scale(1.1);
+}
+.page-buttons .page-btn:hover {
+    background-color: #2F6B3F;
+    transform: scale(1.1);
+}
+
+/* CSS della pagina "proponi una ricetta" */
+
+/* Contenitore del form */
+form {
+    max-width: 700px; /* Larghezza massima coerente con il sito */
+    margin: 0 auto 40px auto; /* Centra il form e aggiunge spazio sotto */
+    display: flex; /* Layout flessibile */
+    flex-direction: column; /* Elementi uno sotto l’altro */
+    gap: 15px; /* Spazio tra gli elementi */
+}
+
+/* Etichette dei campi */
+form label {
+    font-weight: bold; /* Testo più marcato */
+    color: #AE2448; /* Colore principale del sito */
+}
+
+/* Campi input, select e textarea */
+form input,
+form select,
+form textarea {
+    padding: 10px; /* Spazio interno */
+    border-radius: 6px; /* Angoli arrotondati */
+    border: 1px solid #ccc; /* Bordo grigio chiaro */
+    font-family: "Playwrite IE", cursive; /* Mantiene il font del sito */
+    font-size: 1rem;
+    width: 100%; /* Occupa tutta la larghezza disponibile */
+}
+
+/* Quando si clicca dentro un campo */
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none; /* Rimuove bordo blu di default */
+    border: 1px solid #AE2448; /* Bordo colorato coerente col tema */
+    box-shadow: 0 0 5px rgba(174, 36, 72, 0.3); /* Leggera ombra rosa */
+}
+
+/* Pulsante invio */
+form button {
+    background-color: #AE2448; /* Colore principale */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: "Playwrite IE", cursive;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Effetto hover sul pulsante */
+form button:hover {
+    background-color: #6E1A37; /* Colore più scuro */
+    transform: scale(1.05); /* Leggero ingrandimento */
+}
+
+/* Responsive migliorato per schermi piccoli */
+@media (max-width: 600px) {
+
+    main {
+        padding: 15px; /* Riduce il padding su mobile */
+    }
+
+    form {
+        width: 95%; /* Occupa quasi tutta la larghezza */
+    }
+
+    .page-description h2 {
+        font-size: 1.5rem; /* Titolo leggermente più piccolo */
+    }
+}
+
+/* Tabella ricette */
+.tabella-ricette {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+/* Celle */
+.tabella-ricette th,
+.tabella-ricette td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Intestazione */
+.tabella-ricette th {
+    background-color: #AE2448;
+    color: white;
+}
+
+/* Hover righe */
+.tabella-ricette tr:hover {
+    background-color: #f4f4f4;
 }
